@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050507">
+  <title>SB Sistem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stile.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient-bg" aria-hidden="true"></div>
+  <div class="grid-floor" aria-hidden="true"></div>
+  <div class="tech-effects" aria-hidden="true">
+    <span class="code-stream code-stream-left">0101<br>1010<br>0011<br>1100<br>0110<br>1001</span>
+    <span class="code-stream code-stream-right">&lt;/&gt;<br>010<br>{ }<br>101<br>API<br>011</span>
+  </div>
+
+  <main class="scene" id="scene">
+    <article class="card-3d" id="card" aria-label="Presentacion de SB Sistem">
+      <div class="neon-rim" aria-hidden="true"></div>
+      <div class="card-glass">
+        <div class="card-glare" id="glare" aria-hidden="true"></div>
+
+        <header class="card-header">
+          <span class="badge">SYS // 09-CORE</span>
+          <span class="status-dot" title="Nucleo activo" aria-label="Nucleo activo"></span>
+        </header>
+
+        <div class="cube-stage" aria-hidden="true">
+          <div class="orbital-ring"></div>
+          <div class="cube">
+            <div class="cube-face front"></div>
+            <div class="cube-face back"></div>
+            <div class="cube-face right"></div>
+            <div class="cube-face left"></div>
+            <div class="cube-face top"></div>
+            <div class="cube-face bottom"></div>
+          </div>
+        </div>
+
+        <section class="card-body">
+          <h1 class="title">SB Sistem</h1>
+          <p class="subtitle">El lugar adonde tus soluciones aparecen</p>
+        </section>
+
+        <footer class="card-footer">
+          <a class="btn-neon" href="https://github.com/Sebabrandon">Conocenos</a>
+          <button class="btn-ghost btn-info" id="whatWeDoBtn" type="button" aria-haspopup="dialog">¿Qué hacemos?</button>
+        </footer>
+      </div>
+    </article>
+    <div class="floor-shadow" aria-hidden="true"></div>
+  </main>
+
+  <dialog class="info-dialog" id="whatWeDoDialog" aria-labelledby="whatWeDoTitle">
+    <h2 id="whatWeDoTitle">¿Qué hace un analista programador?</h2>
+    <p>Analiza necesidades y crea soluciones digitales. Diseña, desarrolla, prueba y mantiene aplicaciones y sistemas para resolver problemas y facilitar el trabajo de personas y organizaciones.</p>
+    <button class="btn-ghost dialog-close" id="closeWhatWeDoBtn" type="button">Entendido</button>
+  </dialog>
+</body>
+</html>
